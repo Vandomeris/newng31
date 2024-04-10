@@ -4,6 +4,7 @@ import { PhotosComponent } from './pages/photos/photos.component';
 import { PhotoDetailComponent } from './pages/photo-detail/photo-detail.component';
 import { Page404Component } from './pages/404/404.component';
 import { FormSendComponent } from './pages/form-send/form-send.component';
+import { SignalsComponent } from './pages/signals/signals.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -15,6 +16,6 @@ export const routes: Routes = [
         path: 'photos/:id', title: 'Подробное фото', component: PhotoDetailComponent
     },
     { path: 'formSend', component: FormSendComponent },
-
+    { path: 'signals', component: SignalsComponent },
     { path: '**', component: Page404Component },
 ];

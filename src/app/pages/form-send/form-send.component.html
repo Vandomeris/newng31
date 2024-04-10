@@ -1,7 +1,7 @@
-<form (submit)="sendForm()" class="flex flex-col w-[500px] mx-auto">
-    <input [formControl]="userId" class="border py-2 px-4 my-4" placeholder="ID пользователя" type="number">
-    <input [formControl]="title" class="border py-2 px-4 my-4" type="text" placeholder="Заголовок">
-    <textarea [formControl]="body" class="border py-2 px-4 my-4" placeholder="Текст статьи" cols="30"
+<form [formGroup]="createPostForm" (submit)="sendForm()" class="flex flex-col w-[500px] mx-auto">
+    <input formControlName="userId" class="border py-2 px-4 my-4" placeholder="ID пользователя" type="number">
+    <input formControlName="title" class="border py-2 px-4 my-4" type="text" placeholder="Заголовок">
+    <textarea formControlName="body" class="border py-2 px-4 my-4" placeholder="Текст статьи" cols="30"
         rows="10"></textarea>
     <button type="submit"
         class="py-2 px-4 border border-indigo-500 hover:bg-indigo-500 hover:text-white transition-all">Отправить</button>
@@ -9,7 +9,7 @@
 
 
 <div>
-    <p>ID автора статьи: {{ userId.value }}</p>
-    <p>Заголовок статьи: {{ title.value }}</p>
-    <p>Текст статьи: {{ body.value }}</p>
+    <p>ID автора статьи: {{ createPostForm.value.userId }}</p>
+    <p>Заголовок статьи: {{ createPostForm.value.title }}</p>
+    <p>Текст статьи: {{ createPostForm.value.body }}</p>
 </div>
