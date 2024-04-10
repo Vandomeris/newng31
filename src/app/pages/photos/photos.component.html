@@ -1,0 +1,13 @@
+@if(photos$ | async){
+<div>
+
+    @for (photo of photos$ | async; track photo.id) {
+    <a routerLink="/photos/{{photo.id}}">
+        <img src="{{photo.thumbnailUrl}}" alt="">
+        <p> {{photo.title}}</p>
+    </a>
+    <button>Click</button>
+    }
+
+</div>
+}
