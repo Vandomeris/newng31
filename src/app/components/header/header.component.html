@@ -1,8 +1,33 @@
-<header class="mx-auto container flex justify-between items-center">
-    <div class="text-4xl font-bold text-green-500">Лого</div>
+<header class="mx-auto container py-8">
 
-    <nav class="flex gap-x-8">
-        <a class="hover:text-green-500 transition-all" routerLink="/">Главная страница</a>
-        <a class="hover:text-green-500 transition-all" routerLink="/photos">Фотоальбом</a>
-    </nav>
+    <div class="flex justify-between items-center">
+        <button>Поиск</button>
+
+        <div class="">
+            <img src="assets/header_logo.svg" alt="">
+        </div>
+
+        <nav class="flex gap-x-8">
+            <a class="hover:text-green-500 transition-all" routerLink="/">Аккаунт</a>
+            <a class="hover:text-green-500 transition-all" routerLink="/photos">Покупки</a>
+        </nav>
+    </div>
+
+    <hr class="my-7">
+
+    <div>
+
+        <nav>
+            <ul class="flex justify-between items-center">
+                <li><app-header-link linkUrl="#" linkTitle="Jewelry & Accessories"></app-header-link></li>
+                <li><app-header-link linkUrl="#" linkTitle="Clothing & Shoes"></app-header-link></li>
+                <li><app-header-link linkUrl="#" linkTitle="Home & Living"></app-header-link></li>
+                <li><app-header-link linkUrl="#" linkTitle="Wedding & Party"></app-header-link></li>
+                <li><app-header-link linkUrl="#" linkTitle="Toys & Entertainment"></app-header-link></li>
+                <li><app-header-link linkUrl="#" linkTitle="Art & Collectibles"></app-header-link></li>
+            </ul>
+        </nav>
+
+    </div>
+
 </header>
