@@ -1,0 +1,16 @@
+<section class="grid grid-cols-12 gap-10">
+
+    @for (product of products; track product.id) {
+
+    <div class="col-span-3">
+        <img class="w-full aspect-[312/400] object-contain" src="{{product.image}}" alt="">
+        <h4>{{ product.title }}</h4>
+        <div class="flex justify-between">
+            <span>{{ product.category }}</span>
+            <span> {{ product.price }} </span>
+        </div>
+    </div>
+
+    }
+
+</section>

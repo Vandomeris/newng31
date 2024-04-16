@@ -15,6 +15,7 @@ export const routes: Routes = [
     {
         path: 'photos/:id', title: 'Подробное фото', component: PhotoDetailComponent
     },
+    {}
     { path: 'formSend', component: FormSendComponent },
     { path: 'signals', component: SignalsComponent },
     { path: '**', component: Page404Component },

@@ -1,14 +1,16 @@
-<section>
+<app-home-hero></app-home-hero>
 
 
-    <div>
-        <h1>Коллекции</h1>
-        <p class="capitalize">you can explore ans shop many differnt collection
-            from various barands here.</p>
+<section class="flex justify-between gap-x-5 my-20">
 
-        <app-btn-black-white linkTitle="Show Now" linkUrl="#"></app-btn-black-white>
-
-    </div>
-
+    <img src="/assets/brand-1.png" alt="">
+    <img src="/assets/brand-2.png" alt="">
+    <img src="/assets/brand-3.png" alt="">
+    <img src="/assets/brand-4.png" alt="">
+    <img src="/assets/brand-5.png" alt="">
 
 </section>
+
+<app-recommend></app-recommend>
+
+<app-product-catalog [products]="(homeCatalog$ | async)!"></app-product-catalog>
